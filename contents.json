@@ -1,0 +1,10 @@
+{    "module": {
+        "name": "e3sm_diags",
+        "long_name": "E3SM Diags",
+        "version": "1"
+    },
+    "contents": [
+        "cmec/serial.json",
+	"cmec/cori_slurm.json"
+    ]
+}

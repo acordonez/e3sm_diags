@@ -1,0 +1,27 @@
+{
+    "settings": {
+        "name": "serial",
+        "driver": "cmec/serial.sh",
+        "async": "mpi",
+        "long_name": "E3SM Diagnostics Package v2",
+        "description": "This diagnostics package is constructed for supporting the diagnostics task of DOE's Energy Exascale Earth System Model (E3SM) project",
+        "runtime": {"e3sm_diags":"2.6.0","python":"3+"}
+    },
+    "varlist": {
+        "": {
+            "long_name": "",
+            "units": "",
+            "frequency": ""
+        }
+    },
+    "obslist": {
+        "": {
+            "version": "",
+            "long_name": "",
+            "description": ""
+        }
+    },
+    "default_parameters": {
+        "":""
+    }
+}
