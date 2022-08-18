@@ -27,7 +27,8 @@
 		"queue": "regular",
 		"account": "",
 		"nodes": 1,
-		"time": "00:30:00"
+		"time": "00:30:00",
+		"num_workers": "32"
 	},
 	"parameters": {}
     }
