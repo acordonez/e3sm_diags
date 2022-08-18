@@ -1,5 +1,7 @@
-import os
+#!/usr/bin/env python
+
 import json
+import os
 import sys
 
 configuration_name = sys.argv[1]
@@ -8,11 +10,13 @@ test_path = os.getenv("CMEC_MODEL_DATA")
 ref_path = os.getenv("CMEC_OBS_DATA")
 out_path = str(os.getenv("CMEC_WK_DIR"))
 
+# Get settings from cmec settings file
 cmec_settings = os.getenv("CMEC_CONFIG_DIR")
 cmec_settings_json = os.path.join(cmec_settings,"cmec.json")
 with open(cmec_settings_json,"r") as cmec_json:
     cmec_user_settings = json.load(cmec_json)["e3sm_diags/{0}".format(configuration_name)]
 
+# Assemble E3SM diags parameter file
 header = [
     "import os",
     "\n",
